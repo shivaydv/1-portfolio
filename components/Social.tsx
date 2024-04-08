@@ -8,7 +8,7 @@ type SocialProps = {
 
 const Social = ({ className }: SocialProps) => {
   return (
-    <div className={`grid grid-flow-col ${className} gap-6 `}>
+    <div className={`flex ${className} gap-6 `}>
         <Link href="https://github.com/Shivaydv"><BsGithub size={22}/></Link>
         <Link href="https://www.linkedin.com/in/shivaydv/"><BsLinkedin size={22} /></Link>
         <Link href="https://www.youtube.com/@shivay1256"><BsYoutube size={22}/></Link>

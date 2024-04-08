@@ -1,21 +1,25 @@
+
 import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
-import { Cross, Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className="drawer ">
+    <div className="drawer sticky top-0 z-30 ">
       <input id="menu" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content ">
-        <nav className="navbar bg-base-100 lg:py-6">
+        <nav 
+        
+        className="navbar bg-base-100 lg:h-24 shadow-sm">
           <div className="navbar-start">
             <Logo className="pl-2" />
           </div>
 
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center hidden lg:flex ">
             <ul className="menu menu-horizontal px-1 gap-2">
               <li>
                 <Link href={"/"}>Home</Link>

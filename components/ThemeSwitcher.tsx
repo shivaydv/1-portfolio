@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 const ThemeSwitcher = () => {
   const [checked, setChecked] = useState(false);
 
-  // TASK : fix th etheme state in local storage 
+  // TASK : fix theme state in local storage 
   const [theme,setTheme]=useState(window.localStorage.getItem("Theme")||"light");
 
   useEffect(()=>{   

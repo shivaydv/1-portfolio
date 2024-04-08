@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Logo from './Logo'
 import { X } from 'lucide-react'
 import Social from './Social'
+import Link from 'next/link'
 
 const Sidebar = () => {
 
@@ -13,7 +14,8 @@ function handleClick() {
   }
 
   return (
-    <div className="drawer-side lg:hidden z-10">
+    <div className="drawer-side lg:hidden z-20">
+      {/* TASK : make the close button and close drawer when clicked on its item  */}
         <label
           htmlFor="menu"
           aria-label="close sidebar"
@@ -30,13 +32,13 @@ function handleClick() {
           <div className='space-y-2'>
 
           <li className=" ">
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li className="  ">
-            <a href="#">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li className="">
-            <a href="#">Contact</a>
+            <Link href="/contact">Contact</Link>
           </li>   
           </div>
           
