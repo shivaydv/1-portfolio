@@ -54,7 +54,7 @@ interface projectDataProps{
 }
 export const projectdata:projectDataProps[] = [
     {
-        id:2,
+        id:1,
         title:"Crypto App",     
         link:'https://github.com/shivaydv/Crypto-App',
         src:"/solvemind.png", 
@@ -72,7 +72,7 @@ export const projectdata:projectDataProps[] = [
         techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 
     },
     {
-        id:2,
+        id:3,
         title:"Crypto App",     
         link:'https://github.com/shivaydv/Crypto-App',
         src:"/crypto.png", 
@@ -81,7 +81,7 @@ export const projectdata:projectDataProps[] = [
         techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 
     },
     {
-        id:2,
+        id:4,
         title:"Crypto App",     
         link:'https://github.com/shivaydv/Crypto-App',
         src:"/aspartinx.png", 
@@ -90,7 +90,7 @@ export const projectdata:projectDataProps[] = [
         techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 
     },
     {
-        id:2,
+        id:5,
         title:"Crypto App",     
         link:'https://github.com/shivaydv/Crypto-App',
         src:"/portfolio-2.png", 

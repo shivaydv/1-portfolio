@@ -12,7 +12,7 @@ const config: Config = {
   ],
   darkMode:"class",
   theme: {
-    extend: {},
+    extend: { },
   },
   plugins: [require("daisyui"),addVariablesForColors],
     // daisyUI config (optional - here are the default values)

@@ -9,12 +9,12 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className="drawer sticky top-0 z-30 ">
+    <div className="drawer sticky top-0 z-[90]  ">
       <input id="menu" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content ">
         <nav 
         
-        className="navbar bg-base-100 lg:h-24 shadow-sm">
+        className="navbar bg-base-100  lg:h-24 ">
           <div className="navbar-start">
             <Logo className="pl-2" />
           </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* navbar right  */}
           <div className="navbar-end ">
             <div className="max-lg:hidden">
-              <ThemeSwitcher />
+              {/* <ThemeSwitcher /> */}
             </div>
             <label
               htmlFor="menu"
