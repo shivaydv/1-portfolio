@@ -40,7 +40,7 @@ const Navbar = () => {
             </div>
             <label
               htmlFor="menu"
-              className="drawer-button btn btn-ghost px-3 lg:hidden "
+              className="drawer-button btn btn-ghost px-3 lgd:hidden "
             >
               <Menu />
             </label>
