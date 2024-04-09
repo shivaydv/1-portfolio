@@ -1,7 +1,6 @@
-
 import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
-import {  Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
@@ -12,9 +11,7 @@ const Navbar = () => {
     <div className="drawer sticky top-0 z-[90]  ">
       <input id="menu" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content ">
-        <nav 
-        
-        className="navbar bg-base-100  lg:h-24 ">
+        <nav className="navbar bg-base-100  lg:h-24 ">
           <div className="navbar-start">
             <Logo className="pl-2" />
           </div>
@@ -35,9 +32,7 @@ const Navbar = () => {
 
           {/* navbar right  */}
           <div className="navbar-end ">
-            <div className="max-lg:hidden">
-              {/* <ThemeSwitcher /> */}
-            </div>
+            {/* <div className="max-lg:hidden"><ThemeSwitcher /></div> */}
             <label
               htmlFor="menu"
               className="drawer-button btn btn-ghost px-3 lgd:hidden "

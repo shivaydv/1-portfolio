@@ -4,21 +4,23 @@ import React, { useEffect, useState } from "react";
 const ThemeSwitcher = () => {
   const [checked, setChecked] = useState(false);
 
-  // TASK : fix theme state in local storage 
-  const [theme,setTheme]=useState(window.localStorage.getItem("Theme")||"light");
+  // TASK : fix theme state in local storage
+  const [theme, setTheme] = useState(
+    window.localStorage.getItem("Theme") || "light"
+  );
 
-  useEffect(()=>{   
-    const isDarkMode = window.localStorage.getItem("Theme") === "true" ? true : false;
+  useEffect(() => {
+    const isDarkMode =
+      window.localStorage.getItem("Theme") === "true" ? true : false;
     setChecked(isDarkMode);
-    window.localStorage.setItem("Theme",theme);
+    window.localStorage.setItem("Theme", theme);
   }, []);
 
   const onChange = () => {
-    setChecked(!checked);   
-    setTheme(checked?"dark":"light");
-    window.localStorage.setItem("Theme",theme);
+    setChecked(!checked);
+    setTheme(checked ? "dark" : "light");
+    window.localStorage.setItem("Theme", theme);
   };
-
 
   return (
     <label className="flex cursor-pointer gap-2">
@@ -41,7 +43,7 @@ const ThemeSwitcher = () => {
         value="dark"
         className="toggle theme-controller"
         checked={checked}
-        onChange= {onChange}
+        onChange={onChange}
       />
       <svg
         xmlns="http://www.w3.org/2000/svg"
