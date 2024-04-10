@@ -43,7 +43,7 @@ const page = () => {
             love making Websites or Apps that are both functional and beautiful.
           </p>
           <p className="max-lg:text-sm font-normal tracking-wide">
-            I'm a quick learner and a team player who is always ready to
+            I am a quick learner and a team player who is always ready to
             collaborate with others to create something amazing. Apart from
             coding, I love to play basketball and workout.
           </p>
