@@ -16,8 +16,7 @@ const Hero = () => {
         </h1>
 
         <p className=" text-base lg:text-lg text-gray-500 pt-4 xl:w-1/2">
-          I built this template for everyone who is looking to create a new
-          personal portfolio website. You can write your own blurb here. 
+          I speacialize in building web applications with modern technologies and frameworks. can help you build your next project.
 
         </p>
 
