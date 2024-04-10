@@ -17,7 +17,8 @@ const Hero = () => {
 
         <p className=" text-base lg:text-lg text-gray-500 pt-4 xl:w-1/2">
           I built this template for everyone who is looking to create a new
-          personal portfolio website. You can write your own blurb here.
+          personal portfolio website. You can write your own blurb here. 
+
         </p>
 
         <div className="py-8 flex gap-4 max-lg:w-full justify-center">
