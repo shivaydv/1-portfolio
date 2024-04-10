@@ -8,7 +8,7 @@ const ProjectSection = () => {
   return (
     <div className=" text-center pt-16" id="projects">
       <SectionHeading heading={"Projects"} />
-      <div className=" grid grid-col-2 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-8  w-fit max-lg:px-4  py-10 ">
+      <div className=" grid  lg:grid-cols-2 2xl:grid-cols-3 gap-10 lg:gap-20 mx-auto   w-fit max-lg:px-4  py-10 ">
         {
           projectdata.map((project, idx) => (
           <ProjectCard

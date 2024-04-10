@@ -5,7 +5,7 @@ import SkillSection from "@/components/SkillSection";
 
 export default function Home() {
   return (
-    <main className="px-2 lg:px-2 pb-10 ">
+    <main className="px-2 pb-10 ">
       <Hero/>
       <ProjectSection/>
       <SkillSection/>
