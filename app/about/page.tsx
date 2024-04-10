@@ -38,7 +38,7 @@ const page = () => {
         <div className="flex flex-col justify-center items-left space-y-2  ">
           <h1 className="font-bold text-xl">About Me</h1>
           <p className="max-lg:text-sm font-normal tracking-wide">
-          Hey there! I’m Shiva, a full-stack web developer currently pursuing
+          Hey there! I am Shiva, a full-stack web developer currently pursuing
             my B.Tech in Computer Science from SR Group of Institutions, AKTU. I
             love making Websites or Apps that are both functional and beautiful.
           </p>
