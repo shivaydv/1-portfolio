@@ -21,11 +21,11 @@ export const SkillCards = () => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("grid grid-cols-2   lg:grid-cols-3 w-fit ")}>
+    <div className={cn("grid grid-cols-3 w-fit ")}>
       {skills.map((item, idx) => (
         <div
           key={item?.title + idx}
-          className="relative group  block p-2 lg:h-64 lg:w-64 h-40 w-40"
+          className="relative group  block p-2 lg:h-64 lg:w-64 h-32 w-32"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -50,10 +50,10 @@ export const SkillCards = () => {
           <div className="bg-white border text-black/80  hover:border-4 hover:border-black rounded-xl aspect-square z-50 relative gap-2  flex-col flex justify-center items-center">
             <span className="">
               {React.createElement(item.icon, {
-                className: "w-10 h-10 lg:w-12 lg:h-12",
+                className: "w-8 h-8 lg:w-12 lg:h-12",
               })}
             </span>
-            <h3 className="font-semibold  tracking-wider w-full">
+            <h3 className="font-semibold max-lg:text-sm  tracking-wider w-full">
               {item.title}
             </h3>
           </div>
