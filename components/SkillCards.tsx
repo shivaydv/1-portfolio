@@ -5,6 +5,7 @@ import { useState } from "react";
 import { IconType } from "react-icons";
 import React from "react";
 import {
+  SiFigma,
   SiFirebase,
   SiGit,
   SiJavascript,
@@ -105,7 +106,7 @@ export const skills: skillProps[] = [
     icon: SiMongodb,
   },
   {
-    title: "FireBase",
-    icon: SiFirebase,
+    title: "Figma",
+    icon: SiFigma,
   },
 ];
