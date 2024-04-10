@@ -5,13 +5,13 @@ import CodeSnippet from "./CodeSnippet";
 
 const Hero = () => {
   return (
-    <div className="flex item-center max-lg:flex-col justify-start h-[80vh] max-lg:py-24 max-lg:px-2   xl:h-[45rem] relative text-black ">
+    <div className="flex item-center max-lg:flex-col justify-start  max-lg:py-24 max-lg:px-2   h-[45rem] relative text-black ">
       <section className="flex flex-col justify-center items-start xl:w-4/6 lg:px-20 px-2   ">
         <h2 className="font-semibold text-gray-500 text-lg md:text-2  xl lg:text-2xl">
           Hi ,I am Shiva. 👋
         </h2>
 
-        <h1 className="font-bold text-2xl md:text-3xl  xl:text-7xl ">
+        <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl  xl:text-7xl ">
           A FullStack Web Developer
         </h1>
 
@@ -21,10 +21,10 @@ const Hero = () => {
         </p>
 
         <div className="py-8 flex gap-4 max-lg:w-full justify-center">
-          <Link href={"/contact"} className="hover:bg-white hover:text-black  border border-transparent ease-in-out transition-all duration-100 rounded-xl  btn  btn-neutral">
+          <Link href={"/contact"} className="  btn  btn-outline shadow-md">
             Get In Touch
           </Link>
-          <Link href={"#projects"} className=" btn btn-outline shadow-md">
+          <Link href={"#projects"} className=" btn btn-outline shadow-md ">
             Browse Projects
           </Link>
         </div>
