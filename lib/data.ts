@@ -6,24 +6,27 @@ import { GrReactjs } from "react-icons/gr";
 
 interface projectDataProps{
     
-    title:string;     
-    link:string;
+    title:string;    
+    github:string 
+    link?:string;
     src:string;  
-    description: string;  
-    category:string[];
-    techstack:IconType[];
+    description?:string;  
+    category?:string[];
+    techstack?:IconType[];
 }
 export const projectdata:projectDataProps[] = [
     {       
         title:"Crypto App",     
-        link:'https://github.com/shivaydv/Crypto-App',
+        github:"https://github.com/shivaydv/",
+        link:'https://shivaydv.vercel.app',
         src:"/solvemind.png", 
         description:`This is a simple crypto app that uses the CoinGecko API to show real time data of top 10 cryptocurrencies like Bitcoin`,
         category:["React","NodeJS"],
         techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 
     },
     {
-        title:"Crypto App",     
+        title:"Crypto App",
+        github:"https://github.com/shivaydv/",     
         link:'https://github.com/shivaydv/Crypto-App',
         src:"/tesla.png", 
         description:`This is a simple crypto app that uses the CoinGecko API to show real time data of top 10 cryptocurrencies like Bitcoin`,
@@ -31,7 +34,8 @@ export const projectdata:projectDataProps[] = [
         techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 
     },
     {
-        title:"Crypto App",     
+        title:"Crypto App",
+        github:"https://github.com/shivaydv/",     
         link:'https://github.com/shivaydv/Crypto-App',
         src:"/crypto.png", 
         description:`This is a simple crypto app that uses the CoinGecko API to show real time data of top 10 cryptocurrencies like Bitcoin`,
@@ -39,7 +43,8 @@ export const projectdata:projectDataProps[] = [
         techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 
     },
     {
-        title:"Crypto App",     
+        title:"Crypto App", 
+        github:"https://github.com/shivaydv/",    
         link:'https://github.com/shivaydv/Crypto-App',
         src:"/aspartinx.png", 
         description:`This is a simple crypto app that uses the CoinGecko API to show real time data of top 10 cryptocurrencies like Bitcoin`,
@@ -47,9 +52,19 @@ export const projectdata:projectDataProps[] = [
         techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 
     },
     {
-        title:"Crypto App",     
+        title:"Crypto App", 
+        github:"https://github.com/shivaydv/",    
         link:'https://github.com/shivaydv/Crypto-App',
         src:"/portfolio-2.png", 
+        description:`This is a simple crypto app that uses the CoinGecko API to show real time data of top 10 cryptocurrencies like Bitcoin`,
+        category:["React","NodeJS"],
+        techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 
+    },
+    {
+        title:"Crypto App",  
+        github:"https://github.com/shivaydv/",   
+        link:'https://github.com/shivaydv/Crypto-App',
+        src:"/portfolio-1.png", 
         description:`This is a simple crypto app that uses the CoinGecko API to show real time data of top 10 cryptocurrencies like Bitcoin`,
         category:["React","NodeJS"],
         techstack:[TbBrandNextjs,GrReactjs,TbBrandTypescript], 

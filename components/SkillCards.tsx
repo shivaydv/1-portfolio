@@ -56,11 +56,14 @@ export const SkillCards = () => {
               {item.title}
             </h3>
           </div>
+          
         </div>
       ))}
     </div>
   );
 };
+
+
 
 interface skillProps {
   title: string;

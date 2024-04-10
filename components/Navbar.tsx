@@ -1,10 +1,10 @@
 import React from "react";
-import ThemeSwitcher from "./ThemeSwitcher";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { MdOutlineFileDownload } from "react-icons/md";
+
 
 const Navbar = () => {
   return (
@@ -30,12 +30,13 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* navbar right  */}
+      
           <div className="navbar-end ">
-            {/* <div className="max-lg:hidden"><ThemeSwitcher /></div> */}
+            <Link className="btn btn-sm btn-outline" href="/Shiva-Resume.pdf" download="Shiva-Resume">
+            My CV <MdOutlineFileDownload size={20}/></Link>
             <label
               htmlFor="menu"
-              className="drawer-button btn btn-ghost px-3 lgd:hidden "
+              className="drawer-button btn btn-ghost px-3 lg:hidden "
             >
               <Menu />
             </label>
@@ -49,3 +50,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+// TASK add the theme Switcher 
