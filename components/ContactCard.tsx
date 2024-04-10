@@ -14,9 +14,7 @@ const ContactCard = () => {
           </h1>
 
           <p className="text-neutral-500 max-w-lg mx-auto my-4  text-sm text-center relative z-10">
-            Welcome to MailJet, the best transactional email service on the web.
-            We provide reliable, scalable, and customizable email solutions for
-            your business.
+            Welcome to my portfolio. If you have any questions or would like to work together, please feel free to contact me.
           </p>
           <div className="w-full flex justify-evenly my-10">
             <div className="tooltip " data-tip="Shivaydv1256@gmail.com">
