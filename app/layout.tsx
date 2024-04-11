@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -16,9 +18,6 @@ export const metadata: Metadata = {
     icon: '/shiva.jpeg', // /public path
   },
 };
-
-  
-
 
 export default function RootLayout({
   children,
@@ -36,6 +35,8 @@ export default function RootLayout({
           </div>
           <Footer />
         </div>
+        <Analytics/>
+        <SpeedInsights/>
       </body>
     </html>
   );
