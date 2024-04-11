@@ -1,14 +1,5 @@
 import React from "react";
 import Logo from "./Logo";
-import { Linkedin } from "lucide-react";
-import {
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-  BsMedium,
-  BsTwitterX,
-  BsYoutube,
-} from "react-icons/bs";
 import Social from "./Social";
 
 const Footer = () => {
