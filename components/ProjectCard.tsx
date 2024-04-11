@@ -37,7 +37,10 @@ const ProjectCard: React.FC<projectCardProps> = ({
         >
           {description}
         </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4 flex-grow  flex justify-center items-end ">
+        <CardItem
+          translateZ="100"
+          className="w-full mt-4 flex-grow  flex justify-center items-end "
+        >
           <Image
             src={src}
             height="1000"
@@ -48,8 +51,10 @@ const ProjectCard: React.FC<projectCardProps> = ({
         </CardItem>
         <div className="flex justify-between items-center mt-20">
           <Link
-            href={github? github : "/"}
-            className={`${github?"":"btn-disabled"} border-transparent border hover:border-black ease-in-out transition-all duration-100 rounded-xl text-xs font-normal dark:text-white`}
+            href={github ? github : "/"}
+            className={`${
+              github ? "" : "btn-disabled"
+            } border-transparent border hover:border-black ease-in-out transition-all duration-100 rounded-xl text-xs font-normal dark:text-white`}
           >
             <CardItem
               translateZ={20}
@@ -63,7 +68,9 @@ const ProjectCard: React.FC<projectCardProps> = ({
           </Link>
           <Link
             href={link ? link : "/"}
-            className={`${link?"":"btn-disabled"} hover:bg-white hover:text-black hover:border-black border border-transparent ease-in-out transition-all duration-100 rounded-xl font-normal text-xs btn btn-sm btn-neutral`}
+            className={`${
+              link ? "" : "btn-disabled"
+            } hover:bg-white hover:text-black hover:border-black border border-transparent ease-in-out transition-all duration-100 rounded-xl font-normal text-xs btn btn-sm btn-neutral`}
           >
             <CardItem
               translateZ={20}

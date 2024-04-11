@@ -2,20 +2,9 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { IconType } from "react-icons";
 import React from "react";
-import {
-  SiFigma,
-  SiFirebase,
-  SiGit,
-  SiJavascript,
-  SiMongodb,
-  SiNextdotjs,
-  SiReact,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
-import { IoLogoNodejs } from "react-icons/io";
+
+import { skills } from "@/lib/data";
 
 export const SkillCards = () => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -49,64 +38,14 @@ export const SkillCards = () => {
 
           <div className="bg-white border text-black/80  hover:border-4 hover:border-black rounded-xl aspect-square z-50 relative gap-2  flex-col flex justify-center items-center">
             <span className="">
-              {React.createElement(item.icon, {
-                className: "w-8 h-8 lg:w-12 lg:h-12",
-              })}
+              {item.icon({className:"w-8 h-8 lg:w-12 lg:h-12"})}
             </span>
             <h3 className="font-semibold max-lg:text-sm  tracking-wider w-full">
               {item.title}
             </h3>
           </div>
-          
         </div>
       ))}
     </div>
   );
 };
-
-
-
-interface skillProps {
-  title: string;
-  icon: IconType;
-}
-
-export const skills: skillProps[] = [
-  {
-    title: "React",
-    icon: SiReact,
-  },
-  {
-    title: "NextJS",
-    icon: SiNextdotjs,
-  },
-  {
-    title: "Tailwind",
-    icon: SiTailwindcss,
-  },
-  {
-    title: "JavaScript",
-    icon: SiJavascript,
-  },
-  {
-    title: "Node JS",
-    icon: IoLogoNodejs,
-  },
-  {
-    title: "TypeScript",
-    icon: SiTypescript,
-  },
-  {
-    title: "Git",
-    icon: SiGit,
-  },
-  
-  {
-    title: "MongoDB",
-    icon: SiMongodb,
-  },
-  {
-    title: "Figma",
-    icon: SiFigma,
-  },
-];

@@ -1,7 +1,7 @@
 "use client";
-import { skills } from "@/components/SkillCards";
-import { CardBody, CardContainer } from "@/components/ui/3d-card";
 
+import { CardBody, CardContainer } from "@/components/ui/3d-card";
+import { skills } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

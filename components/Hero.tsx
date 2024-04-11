@@ -1,11 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import CodeSnippet from "./CodeSnippet";
 
 const Hero = () => {
   return (
-    <div className="flex item-center max-lg:flex-col justify-start  max-lg:py-24 max-lg:px-2   h-[45rem] relative text-black ">
+    <div className="flex item-center max-lg:flex-col justify-start  max-lg:py-24 max-lg:px-2 h-[45rem]  lg:h-[50rem] relative text-black ">
       <section className="flex flex-col justify-center items-start xl:w-4/6 lg:px-20 px-2   ">
         <h2 className="font-semibold text-gray-500 text-lg md:text-2  xl lg:text-2xl">
           Hi ,I am Shiva. 👋

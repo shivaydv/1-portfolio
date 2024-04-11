@@ -1,10 +1,9 @@
 import React from "react";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import Logo from "./Logo";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
 import { MdOutlineFileDownload } from "react-icons/md";
-
 
 const Navbar = () => {
   return (
@@ -30,10 +29,14 @@ const Navbar = () => {
             </ul>
           </div>
 
-      
           <div className="navbar-end ">
-            <Link className="btn btn-sm btn-outline" href="/Shiva-Resume.pdf" download="Shiva-Resume">
-            My CV <MdOutlineFileDownload size={20}/></Link>
+            <Link
+              className="btn btn-sm btn-outline"
+              href="/Shiva-Resume.pdf"
+              download="Shiva-Resume"
+            >
+              My CV <MdOutlineFileDownload size={20} />
+            </Link>
             <label
               htmlFor="menu"
               className="drawer-button btn btn-ghost px-3 lg:hidden "
@@ -50,4 +53,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// TASK add the theme Switcher 
+// TASK add the theme Switcher

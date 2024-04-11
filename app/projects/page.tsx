@@ -1,12 +1,14 @@
-import React from 'react'
+import CategoryTabs from "@/components/CategoryTabs";
+
+import SectionHeading from "@/components/SectionHeading";
 
 const page = () => {
   return (
-    <div>
-        {/* TASK : make a multiple tabs to filter the projects based on the categories */}
-        <h1>Projects </h1>
+    <div className=" text-center ">
+      <SectionHeading heading={"All Projects"} className="lg:mb-2 border-0" />
+      <CategoryTabs />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
