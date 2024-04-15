@@ -20,7 +20,7 @@ const ProjectList = ({ category = "All" }: { category?: string }) => {
   return (
     <div>
       {filteredProjects.length > 0 ? (
-        <div className=" grid  lg:grid-cols-2 2xl:grid-cols-3 gap-10 lg:gap-20 mx-auto   w-fit max-lg:px-4  py-10 ">
+        <div className=" grid  lg:grid-cols-2 2xl:grid-cols-3 gap-10 lg:gap-20 mx-auto   w-fit px-4  py-10 ">
           {filteredProjects.map((project, idx) => (
             <ProjectCard
               key={project.title + idx}
