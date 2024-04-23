@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { Menu } from "lucide-react";
 import Logo from "./Logo";
 import Sidebar from "./Sidebar";
@@ -6,9 +7,12 @@ import Link from "next/link";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar = () => {
+
+const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  
   return (
     <div className="drawer sticky top-0 z-[90]  ">
-      <input id="menu" type="checkbox" className="drawer-toggle" />
+      <input id="menu" type="checkbox" className="drawer-toggle" checked={isDrawerOpen} onChange={() => setIsDrawerOpen(!isDrawerOpen)} />
       <div className="drawer-content ">
         <nav className="navbar bg-base-100  lg:h-24 ">
           <div className="navbar-start">
@@ -47,7 +51,7 @@ const Navbar = () => {
         </nav>
       </div>
 
-      <Sidebar />
+      <Sidebar setIsDrawerOpen={setIsDrawerOpen} />
     </div>
   );
 };
