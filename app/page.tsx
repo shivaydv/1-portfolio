@@ -3,6 +3,7 @@ import ProjectSection from "@/components/ProjectSection";
 import SkillSection from "@/components/SkillSection";
 
 
+
 export default function Home() {
   return (
     <main className="px-2 pb-10 ">
