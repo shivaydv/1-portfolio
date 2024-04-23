@@ -1,9 +1,22 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
+import { useRouter } from 'next/navigation';
 import Logo from "./Logo";
 import Social from "./Social";
 import Link from "next/link";
 
-const Sidebar = () => {
+interface SidebarProps {
+  setIsDrawerOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ setIsDrawerOpen }) => {
+
+  const router = useRouter();
+  const closeDrawer = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+    event.preventDefault();
+    router.push(href);
+    setIsDrawerOpen(false);
+  };
+
   return (
     <div className="drawer-side lg:hidden z-20">
       <label
@@ -19,13 +32,13 @@ const Sidebar = () => {
 
         <div className="space-y-2">
           <li className=" ">
-            <Link href="/">Home</Link>
+            <Link href="/" onClick={(event) => closeDrawer(event, '/')}>Home</Link>
           </li>
           <li className="  ">
-            <Link href="/about">About</Link>
+            <Link href="/about" onClick={(event) => closeDrawer(event, '/about')}>About</Link>
           </li>
           <li className="">
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact" onClick={(event) => closeDrawer(event, '/contact')}>Contact</Link>
           </li>
         </div>
 
